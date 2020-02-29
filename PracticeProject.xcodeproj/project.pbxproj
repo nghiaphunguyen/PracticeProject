@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D587B6A3240AC22B00BF612C /* GithubListPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D587B6A2240AC22B00BF612C /* GithubListPresentable.swift */; };
 		D59A3D89240ABA6A003E6989 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59A3D88240ABA6A003E6989 /* AppDelegate.swift */; };
 		D59A3D8B240ABA6A003E6989 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59A3D8A240ABA6A003E6989 /* SceneDelegate.swift */; };
-		D59A3D8D240ABA6A003E6989 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59A3D8C240ABA6A003E6989 /* ViewController.swift */; };
 		D59A3D90240ABA6A003E6989 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59A3D8E240ABA6A003E6989 /* Main.storyboard */; };
 		D59A3D92240ABA6B003E6989 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D59A3D91240ABA6B003E6989 /* Assets.xcassets */; };
 		D59A3D95240ABA6B003E6989 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59A3D93240ABA6B003E6989 /* LaunchScreen.storyboard */; };
 		D59A3DA0240ABA6B003E6989 /* PracticeProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59A3D9F240ABA6B003E6989 /* PracticeProjectTests.swift */; };
+		D59A3DAD240ABCDD003E6989 /* GithubListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59A3DAC240ABCDD003E6989 /* GithubListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,10 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D587B6A2240AC22B00BF612C /* GithubListPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubListPresentable.swift; sourceTree = "<group>"; };
 		D59A3D85240ABA6A003E6989 /* PracticeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59A3D88240ABA6A003E6989 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D59A3D8A240ABA6A003E6989 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D59A3D8C240ABA6A003E6989 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D59A3D8F240ABA6A003E6989 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D59A3D91240ABA6B003E6989 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D59A3D94240ABA6B003E6989 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +39,7 @@
 		D59A3D9B240ABA6B003E6989 /* PracticeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59A3D9F240ABA6B003E6989 /* PracticeProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeProjectTests.swift; sourceTree = "<group>"; };
 		D59A3DA1240ABA6B003E6989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D59A3DAC240ABCDD003E6989 /* GithubListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +81,9 @@
 		D59A3D87240ABA6A003E6989 /* PracticeProject */ = {
 			isa = PBXGroup;
 			children = (
+				D59A3DAA240ABCA9003E6989 /* Github */,
 				D59A3D88240ABA6A003E6989 /* AppDelegate.swift */,
 				D59A3D8A240ABA6A003E6989 /* SceneDelegate.swift */,
-				D59A3D8C240ABA6A003E6989 /* ViewController.swift */,
 				D59A3D8E240ABA6A003E6989 /* Main.storyboard */,
 				D59A3D91240ABA6B003E6989 /* Assets.xcassets */,
 				D59A3D93240ABA6B003E6989 /* LaunchScreen.storyboard */,
@@ -97,6 +99,23 @@
 				D59A3DA1240ABA6B003E6989 /* Info.plist */,
 			);
 			path = PracticeProjectTests;
+			sourceTree = "<group>";
+		};
+		D59A3DAA240ABCA9003E6989 /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				D59A3DAB240ABCCA003E6989 /* List */,
+			);
+			path = Github;
+			sourceTree = "<group>";
+		};
+		D59A3DAB240ABCCA003E6989 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				D59A3DAC240ABCDD003E6989 /* GithubListViewController.swift */,
+				D587B6A2240AC22B00BF612C /* GithubListPresentable.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D59A3D8D240ABA6A003E6989 /* ViewController.swift in Sources */,
 				D59A3D89240ABA6A003E6989 /* AppDelegate.swift in Sources */,
 				D59A3D8B240ABA6A003E6989 /* SceneDelegate.swift in Sources */,
+				D587B6A3240AC22B00BF612C /* GithubListPresentable.swift in Sources */,
+				D59A3DAD240ABCDD003E6989 /* GithubListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +382,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PracticeProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -370,6 +391,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = liteteam.PracticeProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -379,7 +401,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PracticeProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -387,6 +410,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = liteteam.PracticeProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
